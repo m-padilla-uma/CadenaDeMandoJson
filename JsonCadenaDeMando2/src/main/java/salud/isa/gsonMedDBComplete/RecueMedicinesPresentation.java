@@ -5,6 +5,7 @@ import java.io.IOException;
 import com.google.gson.stream.JsonReader;
 
 public class RecueMedicinesPresentation extends ElementoCadenaMando {
+	
 	private static final String RESCUEMEDPRES_TAGNAME = "rescueMedicinePresentations";
 	
 	private static final String MEDREF_FIELD_TAGNAME = "medicineRef";

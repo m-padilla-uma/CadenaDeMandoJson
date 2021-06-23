@@ -5,6 +5,7 @@ import java.io.IOException;
 import com.google.gson.stream.JsonReader;
 
 public class Medicines extends ElementoCadenaMando {
+	
 	private static final String MEDICINES_TAGNAME = "medicines";
 	
 	private static final Object NAME_FIELD_TAGNAME = "name";
@@ -19,7 +20,6 @@ public class Medicines extends ElementoCadenaMando {
 		// reader.require(XmlPullParser.START_TAG, ns, SINGLE_ELEMENT_TAGNAME);
 		String medName = null;
 		while (reader.hasNext()) {
-			//No cumple principio abierto cerrado
 			String name = reader.nextName();
 			if (name.equals(NAME_FIELD_TAGNAME)) {
 				medName = reader.nextString();

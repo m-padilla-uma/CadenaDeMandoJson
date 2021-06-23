@@ -27,7 +27,6 @@ public class MedicinePresentations extends ElementoCadenaMando {
 		String dose = null;
 		String posRef = null;
 		while (reader.hasNext()) {
-			//No cumple principio abierto cerrado
 			String name = reader.nextName();
 			if (name.equals(MEDREF_FIELD_TAGNAME)) {
 				medRef = reader.nextString();

@@ -15,7 +15,7 @@ public class UserManualSteps extends ElementoCadenaMando{
 	private static final String USERMANUALSTEPS_TAGNAME = "userManualSteps";
 
 	private static final String STEPTI_FIELD_TAGNAME = "stepTitle";
-	private static final String STEPIM_FIELD_TAGNAME = "stepimage";
+	private static final String STEPIM_FIELD_TAGNAME = "stepImage";
 	private static final String STEPTE_FIELD_TAGNAME = "stepText";
 	private static final String INHREF_FIELD_TAGNAME = "inhalerRef";
 	private static final String FIELD_SEPARATOR = ";";
@@ -40,6 +40,8 @@ public class UserManualSteps extends ElementoCadenaMando{
 				stpText = reader.nextString();
 			} else if (name.equals(INHREF_FIELD_TAGNAME)) {
 				inhRef = reader.nextString();
+			} else {
+				reader.skipValue();
 			}
 
 		}

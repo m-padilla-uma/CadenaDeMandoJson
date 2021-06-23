@@ -19,7 +19,6 @@ public class Posologies extends ElementoCadenaMando {
 	
 		String posName = null;
 		while (reader.hasNext()) {
-			//No cumple principio abierto cerrado
 			String name = reader.nextName();
 			if (name.equals(DESC_FIELD_TAGNAME)) {
 				posName = reader.nextString();

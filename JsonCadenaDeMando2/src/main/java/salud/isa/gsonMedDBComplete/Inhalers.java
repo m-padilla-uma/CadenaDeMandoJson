@@ -5,7 +5,6 @@ import java.io.IOException;
 import com.google.gson.stream.JsonReader;
 
 public class Inhalers extends ElementoCadenaMando {
-//Podría heredar de physiotherapy porque los métodos son iguales
 	
 	private static final String INHALERS_TAGNAME = "inhalers";
 
